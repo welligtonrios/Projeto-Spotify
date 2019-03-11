@@ -1,0 +1,191 @@
+/*wrios@fasculdade*/
+
+
+
+
+
+/*====================Layout====================*/
+/*html*/
+
+html,body,.capa{
+    height: 100%;  
+}
+
+/*Body*/
+/*Capa*/
+body{
+	background: url('imagens/capa.png'),url('imagens/ruido.png'),  linear-gradient(50deg,#ff4169,#7c26f8);
+	overflow-x: hidden;
+	font-family: Helvetica,Arial,sans-serif;
+	background-attachment: fixed;
+	 overflow-x: hidden;
+
+
+}
+
+
+/*Logo*/
+
+.img-logo{
+	height: 60px;
+	width: 132px;
+	display: block;
+	background:url('imagens/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+.navbar-brand{
+	padding: 5px 15px; 
+}
+
+/*Barra de navegaçao */
+
+nav.navbar-transparent{
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6); 
+}
+
+.divisor{ 
+	width: 2px;
+	height: 16px;
+	background:white;
+	margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a { /*dentro da classe navbar-inverse .navbar-nav está li>a, vou formatar o link <a> que é o primeiro filho direto da <li>´por isso li>a, se fosse li a sem > eu iria formatar todos os link que esta dentro do atributo <li>*/
+color: white;						/*.navbar-inverse .navbar-nav>li>a  é a formatação propria do bootstrap, pra pegar é só clicar com o botão direito na pagina onde esta o codigo que vc quer ver  e inspesionar */
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #9bf0e1;
+}
+/*Capa*/
+
+.capa{
+	display: table;
+	width: 100%;
+
+}
+
+.texto-capa{
+	text-align: center;
+  color: white;
+  display: table-cell;/*para que ela se comport como celula de tabela*/
+  vertical-align: middle; 
+}
+
+/*botões*/
+
+.btn-custom{
+	color: white;
+	padding: 10px 35px;
+	text-transform: uppercase;
+	margin:0px 15px;
+	-webkit-border-radius: 500px;	/*webkit ee moz- somente para que funcionem em outros browsers*/
+	-moz-border-radius: 500px;
+	transition: background 0.5s, color 0.4s;
+}
+
+.btn-roxo{
+background: #7c25f8;
+
+}
+.btn-roxo:hover{
+background: #6207e3;
+color: white;
+}
+
+.btn-transparent{
+border: 2px solid white;
+}
+
+.btn-transparent:hover{
+	background: white;
+	color: black;
+}
+
+																/*serviços*/
+#serviços{
+	background: white;
+	padding-top:20px ;
+	padding-bottom: 20px;
+}
+
+/*albus serviços*/
+
+.Albuns{
+
+	padding: 10px 0px  10px 0px ;
+}
+
+/*recursos*/
+#recursos{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+/*recursos imagens*/
+
+.rotacionar{
+	transform: rotate(30deg);
+	-ms-transform:rotate(30deg);/*IE9*/
+	-webkit-transform:rotate(30deg);/*chorme, safari,Opera*/
+	padding-left: 80px;
+}
+
+#rodape{
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.item-rede-social{
+	float: right;
+}
+
+}
+/*====================Tipografia(para formatação de texto)====================*/
+
+h1{
+
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
+
+h2{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+
+/*serviços*/
+#serviços h2,#serviços h3{
+color: #7c25f8;
+}
+
+
+#recursos h3{
+ color: #9bf0e1;
+}
+
+
+/*rodape*/
+
+#rodape li>a{
+	color: white;
+}
+
+#rodape li>a:hover{
+	color: #9bf0e1 ;
+	background: none;
+}
